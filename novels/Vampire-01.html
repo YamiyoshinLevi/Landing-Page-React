@@ -18,7 +18,7 @@
         link.rel = 'stylesheet';
         link.type = 'text/css';
         if (OSName = "Android" || "iOS") link.href = '../style-mobile.css';
-        else link.href = '../style.css';
+        if (OSName != "Android" || "iOS") link.href = '../style.css';
         head.appendChild(link);
       }
     </script>
@@ -28,7 +28,7 @@
       <tbody>
         <tr>
           <td style="text-align: left; vertical-align: top; background-color: white;">
-            <center><h1 style="font-family: universal;">01. <ruby>一聲巨響劃破夜空<rt style="font-size: large;">Un Zgomot Puternic Străpunse Cerul Nopții</rt></ruby></h1></center>
+            <center><h1 style="font-family: universal;">01. <ruby>一聲巨響劃破夜空<rt>Un Zgomot Puternic Străpunse Cerul Nopții</rt></ruby></h1></center>
             <hr>
             <p style="font-family: universal;">
               2024年02月01日 星期日夜晚 (00:12) -15.1℃
