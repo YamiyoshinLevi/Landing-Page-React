@@ -1,29 +1,25 @@
 @font-face {
     font-family: kanji-mao;
-    src: url(../MasaFont-Regular.ttf);
+    src: url(fonts/MasaFont-Regular.ttf);
 }
 @font-face {
     font-family: universal;
-    src: url(../pala.ttf);
+    src: url(fonts/pala.ttf);
     unicode-range:U+00-3FF, U+1E00-1FFF, U+2200-22FF;
 }
 @font-face {
     font-family: universal;
-    src: url(../RomanCyrillic_Std.ttf);
+    src: url(fonts/RomanCyrillic_Std.ttf);
     unicode-range:U+400-52F, U+A656, U+A657;
 }
 @font-face {
     font-family: universal;
-    src: url(../yumin.ttf);
+    src: url(fonts/yumin.ttf);
     unicode-range:U+2014, U+A5, U+4E00-9FFF, U+30??, U+FF00-FF9F, u+2019;
 }
 .center {
     margin-left: auto;
     margin-right: auto;
-}
-@font-face {
-    font-family: up-alt;
-    src: url(../font.woff);
 }
 body {
     font-size: 125%;
