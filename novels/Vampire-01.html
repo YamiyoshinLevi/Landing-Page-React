@@ -4,7 +4,24 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>01. 一聲巨響劃破夜空</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <script>
+      {
+        var OSName = "Unknown OS";
+        if (navigator.userAgent.indexOf("Win") != -1) OSName = "Windows";
+        if (navigator.userAgent.indexOf("Mac") != -1) OSName = "Macintosh";
+        if (navigator.userAgent.indexOf("Linux") != -1) OSName = "Linux";
+        if (navigator.userAgent.indexOf("Android") != -1) OSName = "Android";
+        if (navigator.userAgent.indexOf("like Mac") != -1) OSName = "iOS";
+        console.log('Your OS: ' + OSName);
+        let head = document.getElementsByTagName('HEAD')[0];
+        let link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        if (OSName = "Android" || "iOS") link.href = '../style-mobile.css';
+        else link.href = '../style.css';
+        head.appendChild(link);
+      }
+    </script>
   </head>
   <body>
     <table class="center" style="width: 1080px;" boarder="0">
